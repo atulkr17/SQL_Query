@@ -1,0 +1,1 @@
+SELECT model as phone,brand_name as br, battery_capacity FROM phone.smartphones;

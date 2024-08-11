@@ -1,0 +1,1 @@
+SELECT DISTINCT brand_name,processor_brand FROM phone.smartphones;

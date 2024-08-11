@@ -1,0 +1,1 @@
+SELECT * FROM atul.insurance_data where claim='5000'

@@ -1,0 +1,39 @@
+1. select a particular database
+
+2. count number of rows
+
+3. return n random records
+
+I 4. Find null values
+
+5. find the number of orders placed by each customer
+
+6. find restaurant with most number of menu items
+
+7. find number of votes and avg rating for all the restaurants
+
+8. find the food that is being sold at most number of restaurants
+
+9. find restaurant with max revenue in a given month
+
+10. find restaurants with sales > x
+
+11. find customers who have never ordered
+
+12. Show order details of a particular customer in a given date range
+
+13. Customer favorite food
+
+14. find most costly restaurants(Avg price/dish)
+
+15. find delivery partner compensation using the formula (#deliveries * 100 + 1000*avg_rating)
+
+16. find revenue per month for a restaurant
+
+17. find correlation between delivery time and total rating
+
+18. find corr between #orders and avg price for all restautants
+
+19. find all the veg restaurants
+
+20. find min and max order value for all the customers

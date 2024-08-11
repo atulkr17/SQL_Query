@@ -1,0 +1,57 @@
+create TABLE users(
+    user_id INTEGER NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    
+    CONSTRAINT user_email_unique UNIQUE(email),
+    CONSTRAINT user_userid_primarykey PRIMARY KEY(user_id)
+    )
+DROP TABLE USERS
+create TABLE users(
+    user_id INTEGER PRIMARY key AUTO INCRIMENT,
+    name VARCHAR(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL
+    )
+DROP TABLE users
+
+CREATE TABLE student(
+    student_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    age INTEGER ,
+    
+    CONSTRAINT student_age_check CHECK (age>6 and age <56)
+    )
+
+
+CREATE TABLE customer(
+    cid INTEGER PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email varchar(255) NOT NULL UNIQUE
+    )
+
+
+
+
+create table users(
+      user_id INTEGER primary key auto_increment,
+      name varchar(255) not null,
+      email varchar(255) not null unique,
+      pasword varchar(255) not null
+      )
+
+
+INSERT INTO phone.users 
+VALUES (NULL,"ankush","ankush@gmail.com","123456")
+
+
+INSERT INTO phone.users (name,email)
+VALUES ("sachin","sachin@gmail.com")
+
+
+INSERT INTO phone.users VALUES
+(NULL, 'nakul','nakul@gmail.com','6754'),
+(NULL,'amitesh','amitesh@gmail.com','12754'),
+(NULL, 'honey','honey@gmail.com','64573'),
+(NULL, 'siwam','siwam@gmail.com','274645')

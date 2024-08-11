@@ -1,0 +1,1 @@
+SELECT distinct(os) as 'operating system' FROM phone.smartphones;
