@@ -52,9 +52,14 @@ Select director,star,max(gross) as 'max_gross' from movies
 						order by sum(gross) DESC limit 5
 )
                         
-Select * from movies where (director,star,gross)=(Select * from Top_movie);   
+Select * from movies where (director,star,gross)=(Select director,star,max_gross from Top_movie);   
 
-           
+-- Q. Find all the movies that have a rating higher than the average rating 
+--    of movies in the same genre.[Animation]           
+
+Select * from movies m1 where score > (Select avg(score)
+                                       from movies m2 where m2.genre=m1.genre)
+
 
 
 

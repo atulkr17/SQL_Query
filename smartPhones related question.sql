@@ -1,0 +1,1 @@
+select model,battery_capacity,os from atul.smartphones
