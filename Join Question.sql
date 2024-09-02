@@ -56,11 +56,27 @@ on t1.productID=t2.productID
 join Employees t3 
 ON t1.salesPersonID =t3.EmployeeID
 Group by t1.salesPersonID
-order by "Total_sum" limit 5
+order by "Total_sum" limit 5;
 
 -- Q7. List all customers who have made more than 10 purchases.
+select t2.customerID,t2.firstName,t2.lastName ,count(*) from sales1 t1
+join customers t2
+on t1.customerID = t2.customerID
+group by t2.customerID
+having count(*) > 10
+order by count(*);
+
+-- Q8.  List all salespeople who have made sales to more than 5 customers.
+
+Select t2.salespersonID ,t1.firstName,t1.lastname ,
+count(distinct customerID) as 'Unique_Data'
+from Employees t1
+join sales1 t2
+on t1.EmployeeID = t2.salespersonID
+group by SalespersonID 
+having count(distinct customerID)> 5
 
 
 
-
-
+ -- Q9. List all pairs of customers who have made purchases with 
+--      the same salesperson.
